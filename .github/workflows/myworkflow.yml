@@ -8,5 +8,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo "The job was automatically triggered by a ${{ secrets.MY }} event."
-      - run: echo "The job was automatically triggered by a ${{ vars.NAME }} event."
+      - run: echo "The job was automatically triggered by a ${{ runner.os }} event."
       
